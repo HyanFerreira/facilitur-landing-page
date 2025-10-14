@@ -1,5 +1,6 @@
 import "./App.css";
-import logo from "./assets/logotipo.svg"; // coloque seu SVG aqui
+import logo from "./assets/logotipo_horizontal.svg";
+import banner from "./assets/banner_mockup.png";
 
 export default function App() {
   return (
@@ -8,8 +9,7 @@ export default function App() {
       <header className="header">
         <div className="container nav">
           <a className="brand" href="#home" aria-label="FaciliTur — início">
-            <span className="logo-dot" />
-            FaciliTur
+            <img className="brand-logo" src={logo} alt="FaciliTur" />
           </a>
 
           <nav className="links" aria-label="principal">
@@ -55,25 +55,14 @@ export default function App() {
             </div>
           </div>
 
-          {/* Arte / Celular com logo */}
-          <div className="hero-art" aria-hidden="true">
-            <div className="bubbles">
-              <span className="b1" />
-              <span className="b2" />
-              <span className="b3" />
-              <span className="b4" />
-            </div>
-
-            <div className="phone">
-              <div className="notch" />
-              <div className="screen">
-                <div className="mask top" />
-                <div className="circle big" />
-                <img className="screen-logo" src={logo} alt="" />
-                <div className="mask bottom" />
-                <div className="home-dot" />
-              </div>
-            </div>
+          {/* Banner mockup como imagem */}
+          <div className="hero-art">
+            <img
+              className="hero-banner"
+              src={banner}
+              alt="Mockup do aplicativo FaciliTur"
+              loading="eager"
+            />
           </div>
         </div>
       </section>
