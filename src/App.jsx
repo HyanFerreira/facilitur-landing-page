@@ -1,9 +1,10 @@
 import "./App.css";
+import logo from "./assets/logotipo.svg"; // coloque seu SVG aqui
 
 export default function App() {
   return (
     <div className="site">
-      {/* ===== Header ===== */}
+      {/* HEADER */}
       <header className="header">
         <div className="container nav">
           <a className="brand" href="#home" aria-label="FaciliTur — início">
@@ -19,7 +20,7 @@ export default function App() {
           </nav>
 
           <div className="cta-head">
-            <a className="btn ghost" href="#" aria-label="Iniciar sessão">
+            <a className="btn ghost" href="#">
               Iniciar sessão
             </a>
             <a className="btn brand" href="#parceiros">
@@ -29,10 +30,9 @@ export default function App() {
         </div>
       </header>
 
-      {/* ===== Hero ===== */}
+      {/* HERO (tela cheia) */}
       <section id="home" className="hero">
         <div className="container hero-grid">
-          {/* Texto */}
           <div className="hero-copy">
             <h1 className="title">
               Em breve FaciliTur
@@ -46,7 +46,7 @@ export default function App() {
             </p>
 
             <div className="hero-actions">
-              <a className="btn brand lg" href="#newsletter">
+              <a className="btn cta" href="#newsletter">
                 Quero assinar a newsletter!
               </a>
               <small className="hint">
@@ -55,7 +55,7 @@ export default function App() {
             </div>
           </div>
 
-          {/* Arte / mock do app */}
+          {/* Arte / Celular com logo */}
           <div className="hero-art" aria-hidden="true">
             <div className="bubbles">
               <span className="b1" />
@@ -67,49 +67,47 @@ export default function App() {
             <div className="phone">
               <div className="notch" />
               <div className="screen">
-                <div className="screen-circle outer" />
-                <div className="screen-circle inner" />
-                <div className="screen-mark">FaciliTur</div>
-                <div className="screen-dot" />
+                <div className="mask top" />
+                <div className="circle big" />
+                <img className="screen-logo" src={logo} alt="" />
+                <div className="mask bottom" />
+                <div className="home-dot" />
               </div>
-              <div className="side" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ===== Sobre ===== */}
+      {/* SOBRE */}
       <section id="sobre" className="section">
         <div className="container cards">
           <article className="card">
             <h2>O que é o FaciliTur?</h2>
             <p>
               FaciliTur é um sistema para ampliar dados e apoiar a implementação
-              de políticas públicas municipais no turismo. Ele ajuda governo e
-              parceiros a gerirem a criação e a divulgação apropriada de eventos
-              públicos ou privados, para moradores e visitantes da cidade.
+              de políticas públicas municipais no turismo. Ajuda governo e
+              parceiros a gerirem a criação e a divulgação de eventos públicos
+              ou privados para moradores e visitantes.
             </p>
             <p>
-              Com um cronograma em tempo real por e-mail para assinantes, você
-              se mantém informado sobre os eventos do dia, da semana, do mês e
-              do ano.
+              Com um cronograma em tempo real por e-mail, assinantes se mantêm
+              informados sobre eventos do dia, semana, mês e ano.
             </p>
           </article>
 
           <article className="card">
             <h2>Nossa missão</h2>
             <p>
-              Nascemos da necessidade de um cronograma integrado do setor
-              turístico, especialmente em municípios dependentes dessa atividade
-              econômica. Queremos viabilizar a divulgação adequada das
-              informações e, com o engajamento da população, gerar retorno
-              consistente ao município.
+              Nascemos da ausência de um cronograma integrado de eventos do
+              setor turístico. Queremos viabilizar a divulgação adequada e, com
+              o engajamento da população, gerar retorno consistente ao
+              município.
             </p>
           </article>
         </div>
       </section>
 
-      {/* ===== Parceiros ===== */}
+      {/* PARCEIROS */}
       <section id="parceiros" className="section">
         <div className="container partners">
           <div className="partners-copy">
@@ -117,23 +115,20 @@ export default function App() {
             <p>
               Procuramos cidades que desejam engajar o setor turístico e
               precisam de dados objetivos e transparentes sobre a participação
-              da população. Fale com nosso time e conheça o FaciliTur.
+              da população.
             </p>
-            <a className="btn brand lg" href="#contato">
+            <a className="btn brand" href="#contato">
               Torne-se um parceiro!
             </a>
           </div>
         </div>
       </section>
 
-      {/* ===== Contato ===== */}
+      {/* CONTATO + NEWSLETTER */}
       <section id="contato" className="section contact">
         <div className="container contact-grid">
           <div>
             <h2>Contato</h2>
-            <p className="muted">
-              Deixe um e-mail e localização fictícia por enquanto.
-            </p>
             <ul className="contact-list">
               <li>
                 <strong>E-mail:</strong> contato@facilitur.app
@@ -163,14 +158,16 @@ export default function App() {
                 required
                 placeholder="seuemail@exemplo.com"
               />
-              <button className="btn brand">Assinar</button>
+              <button className="btn brand" type="submit">
+                Assinar
+              </button>
             </div>
             <small className="hint">Prometemos não enviar spam :)</small>
           </form>
         </div>
       </section>
 
-      {/* ===== Footer ===== */}
+      {/* FOOTER */}
       <footer className="footer">
         <div className="container foot">
           © {new Date().getFullYear()} FaciliTur · Todos os direitos reservados
