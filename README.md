@@ -53,13 +53,20 @@ facilitur-landing-page/
 - **Node.js** 18+ (recomendado 20+)
 - **npm** 9+
 
-### Instalação
+### 1) Clonar o projeto
+
+```bash
+git clone https://github.com/HyanFerreira/facilitur-landing-page
+cd facilitur-landing-page
+```
+
+### 2) Instalação das dependências
 
 ```bash
 npm install
 ```
 
-### Ambiente de desenvolvimento
+### 3) Ambiente de desenvolvimento
 
 ```bash
 npm run dev
