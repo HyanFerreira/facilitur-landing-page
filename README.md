@@ -96,7 +96,3 @@ Para publicar em um host estático (Vercel, Netlify, Cloudflare Pages, GitHub Pa
 - Instrumentar analytics para mensurar conversão dos CTAs.
 - Adicionar SEO técnico (metatags sociais, sitemap, robots, schema.org).
 - Implementar testes de interface e acessibilidade.
-
-## 📄 Licença
-
-Defina aqui a licença oficial do projeto (por exemplo: MIT, proprietária, uso interno etc.).
