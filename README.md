@@ -56,7 +56,7 @@ facilitur-landing-page/
 ### 1) Clonar o projeto
 
 ```bash
-git clone https://github.com/HyanFerreira/facilitur-landing-page
+git clone https://github.com/HyanFerreira/facilitur-landing-page.git
 cd facilitur-landing-page
 ```
 
